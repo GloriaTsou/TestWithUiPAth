@@ -1,0 +1,18 @@
+[
+  {
+    "Constant": false,
+    "Name": "GlobalVariable",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "\"Global\"",
+    "IsLiteral": false
+  },
+  {
+    "Constant": true,
+    "Name": "Constant1",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "\"Constant\"",
+    "IsLiteral": false
+  }
+]
