@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umae="clr-namespace:UiPath.Mail.Activities.Enums;assembly=UiPath.Mail.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamm="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Models;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamt="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Triggers;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:usau1="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamm="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Models;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamt="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Triggers;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="UiPathEventConnector" Type="InArgument(x:String)" />
     <x:Property Name="UiPathEvent" Type="InArgument(x:String)" />
@@ -129,7 +129,7 @@
       <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1244,629" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1261,786.76" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="variable1" />
     </Sequence.Variables>
@@ -138,35 +138,38 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="450,606" sap2010:WorkflowViewState.IdRef="Sequence_2">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <umamt:NewEmailReceived ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Filter="{x:Null}" JobData="{x:Null}" Mailbox="{x:Null}" MailboxBackup="{x:Reference __ReferenceID0}" Result="{x:Null}" UiPathEvent="{x:Null}" UiPathEventConnector="{x:Null}" UiPathEventObjectId="{x:Null}" UiPathEventObjectType="{x:Null}" AuthScopesInvalid="False" BodyAsHtml="False" BrowserFolderId="AQMkADcyM2I0MWExLWE0ZTUtNDJmNS04ZDc5LTA1YjI5ODQzZDg0OAAuAAAD_cDVvCrY_k6UKgup2aUL3wEA9eMB2whaYUy7FVQ3MFxJ7AAAATxOHQAAAA==" BrowserFolderName="收件匣" ConnectionId="ad15a9de-ecd3-4976-a6d0-6b328c2ff78e" DisplayName="Trigger On New Email Received" FilterExpression="(parentFolderId=='AQMkADcyM2I0MWExLWE0ZTUtNDJmNS04ZDc5LTA1YjI5ODQzZDg0OAAuAAAD_cDVvCrY_k6UKgup2aUL3wEA9eMB2whaYUy7FVQ3MFxJ7AAAATxOHQAAAA==')" sap:VirtualizedContainerService.HintSize="416,302" sap2010:WorkflowViewState.IdRef="NewEmailReceived_2" IncludeAttachments="False" MarkAsRead="False" UseConnectionService="True" UseSharedMailbox="False" WithAttachmentsOnly="False">
-        <umamt:NewEmailReceived.MailboxArg>
-          <umamm:TriggerMailboxArgument SharedMailbox="{x:Null}" UseSharedMailbox="False">
-            <umamm:TriggerMailboxArgument.Backup>
-              <usau:BackupSlot x:TypeArguments="umame:MailboxSelectionMode" x:Name="__ReferenceID0" StoredValue="NoMailbox">
-                <usau:BackupSlot.BackupValues>
-                  <scg:Dictionary x:TypeArguments="umame:MailboxSelectionMode, scg:List(x:Object)" />
-                </usau:BackupSlot.BackupValues>
-              </usau:BackupSlot>
-            </umamm:TriggerMailboxArgument.Backup>
-          </umamm:TriggerMailboxArgument>
-        </umamt:NewEmailReceived.MailboxArg>
-      </umamt:NewEmailReceived>
-      <ui:SaveMail Email="{x:Null}" FilePath="{x:Null}" MailMessage="{x:Null}" DisplayName="Save Email Message" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="SaveMail_1" />
-      <ui:GetOutlookMailMessages Account="{x:Null}" Filter="{x:Null}" FilterByMessageIds="{x:Null}" Messages="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Outlook Mail Messages" GetAttachements="False" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="Inbox" MarkAsRead="False" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Top="30" UseISConnection="True">
-        <ui:GetOutlookMailMessages.ConnectionDetailsBackupSlot>
-          <usau1:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="{x:Null}">
-            <usau1:BackupSlot.BackupValues>
-              <scg:Dictionary x:TypeArguments="umae:ConnectionDetails, scg:List(x:Object)" />
-            </usau1:BackupSlot.BackupValues>
-          </usau1:BackupSlot>
-        </ui:GetOutlookMailMessages.ConnectionDetailsBackupSlot>
-      </ui:GetOutlookMailMessages>
-    </Sequence>
+    <umamt:NewEmailReceived ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Filter="{x:Null}" JobData="{x:Null}" Mailbox="{x:Null}" MailboxBackup="{x:Reference __ReferenceID0}" Result="{x:Null}" AuthScopesInvalid="False" BodyAsHtml="False" BrowserFolderId="AQMkADcyM2I0MWExLWE0ZTUtNDJmNS04ZDc5LTA1YjI5ODQzZDg0OAAuAAAD_cDVvCrY_k6UKgup2aUL3wEA9eMB2whaYUy7FVQ3MFxJ7AAAATxOHQAAAA==" BrowserFolderName="收件匣" ConnectionId="ad15a9de-ecd3-4976-a6d0-6b328c2ff78e" DisplayName="Trigger On New Email Received" FilterExpression="(parentFolderId=='AQMkADcyM2I0MWExLWE0ZTUtNDJmNS04ZDc5LTA1YjI5ODQzZDg0OAAuAAAD_cDVvCrY_k6UKgup2aUL3wEA9eMB2whaYUy7FVQ3MFxJ7AAAATxOHQAAAA==')" sap:VirtualizedContainerService.HintSize="416,293" sap2010:WorkflowViewState.IdRef="NewEmailReceived_2" IncludeAttachments="False" MarkAsRead="False" UseConnectionService="True" UseSharedMailbox="False" WithAttachmentsOnly="False">
+      <umamt:NewEmailReceived.MailboxArg>
+        <umamm:TriggerMailboxArgument SharedMailbox="{x:Null}" UseSharedMailbox="False">
+          <umamm:TriggerMailboxArgument.Backup>
+            <usau:BackupSlot x:TypeArguments="umame:MailboxSelectionMode" x:Name="__ReferenceID0" StoredValue="NoMailbox">
+              <usau:BackupSlot.BackupValues>
+                <scg:Dictionary x:TypeArguments="umame:MailboxSelectionMode, scg:List(x:Object)" />
+              </usau:BackupSlot.BackupValues>
+            </usau:BackupSlot>
+          </umamm:TriggerMailboxArgument.Backup>
+        </umamm:TriggerMailboxArgument>
+      </umamt:NewEmailReceived.MailboxArg>
+      <umamt:NewEmailReceived.UiPathEvent>
+        <InArgument x:TypeArguments="x:String">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">UiPathEvent</CSharpValue>
+        </InArgument>
+      </umamt:NewEmailReceived.UiPathEvent>
+      <umamt:NewEmailReceived.UiPathEventConnector>
+        <InArgument x:TypeArguments="x:String">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">UiPathEventConnector</CSharpValue>
+        </InArgument>
+      </umamt:NewEmailReceived.UiPathEventConnector>
+      <umamt:NewEmailReceived.UiPathEventObjectId>
+        <InArgument x:TypeArguments="x:String">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">UiPathEventObjectId</CSharpValue>
+        </InArgument>
+      </umamt:NewEmailReceived.UiPathEventObjectId>
+      <umamt:NewEmailReceived.UiPathEventObjectType>
+        <InArgument x:TypeArguments="x:String">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">UiPathEventObjectType</CSharpValue>
+        </InArgument>
+      </umamt:NewEmailReceived.UiPathEventObjectType>
+    </umamt:NewEmailReceived>
   </Sequence>
 </Activity>
